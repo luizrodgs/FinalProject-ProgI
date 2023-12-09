@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container px-4 py-5" id="custom-cards" xmlns="http://www.w3.org/1999/html">
+        <h2 class="pb-2 border-bottom">{{ pagina }}</h2>
+
+        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+            {% for card in cards %}
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <a href="{{ card.link }}"><h3 class="mt-5 mb-4 display-6 lh-1 fw-bold">{{ card.title }}</h3>
+                            </a>
+                            {% for description in card.descriptions %}
+                                <p>{{ description }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}

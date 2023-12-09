@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container px-4 py-5" id="custom-cards" xmlns="http://www.w3.org/1999/html">
+    <h2 class="pb-2 border-bottom">{{ pagina }}</h2>
+
+    <form method="post" action="{{ url_for('gerador_senha') }}">
+        <div class="mb-3">
+            <label for="sistema" class="form-label">Sistema:</label>
+            <input type="text" class="form-control" id="sistema" name="sistema" placeholder="Facebook">
+        </div>
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    </form>
+
+</div>
+{% endblock %}

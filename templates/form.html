@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container px-4 py-5" id="custom-cards" xmlns="http://www.w3.org/1999/html">
+    <h2 class="pb-2 border-bottom">{{ pagina }}</h2>
+
+    <form method="post" action="{{ url_for('jogar') }}">
+        <div class="mb-3">
+            <label for="nickname" class="form-label">Escolha seu nickname: </label>
+            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="@Apelido">
+        </div>
+        <button type="submit" class="btn btn-primary">Avançar</button>
+    </form>
+
+</div>
+{% endblock %}

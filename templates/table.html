@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container px-4 py-5" id="custom-cards" xmlns="http://www.w3.org/1999/html">
+    <h2 class="pb-2 border-bottom">{{ pagina }}</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                {% for t in th %}
+                <th>{{ t }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for linha in linhas %}
+            <tr>
+                {% for coluna in linha %}
+                <td>{{ coluna }}</td>
+                {% endfor %}
+
+                {% if "Regerar" in th %}
+                <td><a href="{{ url_for('editar', nome_sistema=linha[0]) }}">Regerar</a></td>
+                {% endif %}
+                {% if "Excluir" in th %}
+                <td><a href="{{ url_for('deletar', nome_sistema=linha[0]) }}">Excluir</a></td>
+                {% endif %}
+
+
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

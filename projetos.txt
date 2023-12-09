@@ -1,0 +1,57 @@
+1 - Jogos Matemáticos
+Objetivo: Trata-se do desenvolvimento de um jogo de duas fases. Na primeira fase o programa deve
+sortear um número maior que zero. O usuário tentará acertar este número. Para cada tentativa
+errada, o programa deve informar se o próximo chute deve ser um número maior ou menor. Na
+segunda fase, o usuário terá um minuto para realizar o máximo de operações de adição e subtração
+possíveis.
+Requisitos:
+1- NaAo abrir o jogo o usuário deve informar um nickname começando com @
+2- Após informar corretamente o nickname o usuário deve ir para a primeira fase do jogo
+3- Na primeira fase, o usuário deve visualizar o número de tentativas já realizadas.
+4- Na segunda fase do jogo o usuário terá um minuto para realizar o máximo de operações
+possíveis.
+5- Mesmo que não tenha acertado, o programa deve sortear a próxima operação aritmética.
+6- O sorteio da operação aritmética deve sortear os dois números, bem como o operador.
+7- Ao final da segunda fase, o usuário deve visualizar quantas operações ele realizou
+corretamente.
+8- O programa deve ter um Menu com duas opções: Jogar, Ranking.
+9- Na tela de ranking o usuário deverá visualizar a classificação dos jogadores. Deve-se exibir o
+ranking da primeira fase e da segunda fase separadamente.
+10- As informações do ranking devem ser armazenadas em um arquivo.
+11- Se o usuário jogar várias vezes com o mesmo nickname, então o ranking só deve ser atualizado
+se ele obtiver uma pontuação maior.
+
+
+
+2 - Cadastro de Usuários
+Objetivo: Trata-se de um sistema de cadastro de usuário.
+1. Na tela de cadastro o usuário deve informar os seguintes dados: Nome, Telefone, CPF, RG,
+Endereço, Nascimento, E-mail, upload de Foto.
+2. Você deve validar todos os campos e informar para o usuário caso algum dado informado seja
+inválido. Seja criativo!
+3. Todos os campos são obrigatórios.
+4. O cadastro só pode ser realizado quando todos os dados forem válidos.
+5. Na tela de pesquisa os dados dos usuários devem ser exibidos em uma tabela e deve ser
+permitido o filtro por qualquer dado cadastrado.
+6. Na tabela de pesquisa devem constar os botões para editar e remover cadastros.
+7. Na tela de atualização as mesmas regras de validação do cadastro devem ser aplicadas.
+8. Os dados dos usuários devem ser armazenados em um arquivo csv.
+9. No arquivo csv, a coluna foto deve armazenar o path de onde a foto está armazenada.
+
+
+
+3 - Gerador de Senhas
+Objetivo: Trata-se de um sistema para gerar senhas sintéticas fortes.
+Requisitos:
+1. O usuário deve criar o seu cadastro contendo somente login e senha.
+2. Na tela principal o usuário deve informar o sistema para o qual deseja criar a senha
+3. A senha deve ser gerada utilizando um algoritmo de hash, por exemplo o SHA3.
+4. No menu deve ter a opção de gerenciar senhas
+5. Na tela de gerenciamento de senhas o usuário de verificar em uma tabela todas as senhas
+criadas e os respectivos sistemas.
+6. Nesta tabela deve conter as opções de excluir senha ou renovar senha.
+7. Ao renovar a senha, uma nova senha deve ser gerada para o sistema relacionado.
+8. As senhas dos sistemas devem ser salvas em um arquivo csv.
+
+
+
